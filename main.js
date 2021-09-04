@@ -45,10 +45,124 @@
 // console.log(arrayThree);
 // }
 // -------------------------------------------
+// --------------------STRING--------------------------------------------------------------
+// -------------------1------------------------
+//  var word="kerenhailu"
+//  function stringA(){
+//   if(word.length>5){
+//    return "long"
+//   }
+//     return "short"
+// }console.log(stringA());
+// -------------------2------------------------
+// function aFound(){
+// var wordA="love"
+// for (let i = 0; i < wordA.length; i++) {
+//   if(wordA[i]=="a"){
+// return i
+// }
+//   return  "not found"
+// }
+// }console.log(aFound());
+// -------------------3------------------------
+// function RFound(){
+// var wordR="keren"
+// for (let i = 0; i < wordR.length; i++) {
+//   if(wordR[i]=="r"){
+
+// return true
+//   }
+
+//   return false
+// }
+// }console.log(RFound());
+// -------------------4------------------------
+// function charAndString(str, char) {
+//   for (let i = 0; i < str.length; i++) {
+//     if (str[i] == char) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+// console.log(charAndString("kerenha", "h"));
+// -------------------5------------------------
+// function charPlassString(str, char){
+//   for (let i = 0; i < str.length; i++) {
+//     if(str[i]==char){
+//       return str.lastIndexOf(char)
+//     }
+//   }return false
+// }console.log(charPlassString("helloe", "e"));
+// -------------------6------------------------
+// function wordLong(word){
+//   return word.substr(0,3)
+// }console.log(wordLong( "sayonara"));
+// -------------------7------------------------
+// function fromY(word){
+//   return word.substr((word.indexOf("y")),4)
+// }console.log(fromY("sayonara"));
+// -------------------8------------------------
+// function OTheEnd(word){
+//   return word.substring(word.indexOf("o"))
+// }
+// console.log(OTheEnd("sayonara"))
+// -------------------9------------------------
+// function strAndI(str,a){
+// for (let i = 0; i < str.length; i++) {
+//   if(str.length<a){
+// return "the index is bigger then the length"
+//   }
+//   return str.substr(a)
+// }
+// }console.log(strAndI("keren",2));
+// -------------------10------------------------
+// function stringAndI(str,index){
+// if(index>str.length){
+// return "index bigger then the length"
+// }
+// return str.substr(index,3)
+// }console.log(stringAndI("hailu",1));
+// -------------------11------------------------
+// function strAndTwoNum(str,num1,num2){
+//   if(num1<str.length&&num2<str.length){
+//     return str.substr(num1,num2)
+//   }
+// }console.log(strAndTwoNum("kerenhailu",2,4));
+// -------------------12------------------------
+// function longWord(word){
+//   return word.substring(0,3)
+//   }console.log(longWord("sayonara"));
+// -------------------13------------------------
+// function Y(word){
+// return word.substring(word.indexOf("y"),word.indexOf("y")+4)
+// }console.log(Y("sayonara"));
+// -------------------14------------------------
+// function endO(word){
+// return word.substring(word.indexOf("o"))
+// }console.log(endO("sayonara"));
+// -------------------15------------------------
+// function userName(nameUser) {
+//   if (nameUser.indexOf(" ") != -1) {
+//     console.log(
+//       nameUser.substr(0, nameUser.indexOf(" ")),
+//       nameUser.substr(nameUser.indexOf(" "))
+//     );
+//   }
+//   // console.log(`length:${nameUser.length}`);
+// }
+// askString15.onchange=()=>{
+//   userName(askString15.value);
+// }
+// -------------------16------------------------
+
+
+
+
 // --------------Dom---------------------------------------------------------------------
 // -------------------1------------------------
 // ObjectName ObjectAge ObjectBtn
-var Person={}
+var Person = {};
 // function ObjectPerson(){
 //   Person.ObjectName=ObjectName.value
 //   Person.ObjectAge=ObjectAge.value
@@ -65,14 +179,14 @@ var Person={}
 //   console.log(Person);
 //  }
 // -------------------3------------------------
-  // ObjectBtn.onclick=()=>{
-  //  Person.ObjectName=ObjectName.value
-  //  Person.ObjecFamName=ObjecFamName.value
-  //  Person.ObjectAge=ObjectAge.value
-  //  Person.ObjectEmail=`${ObjectName.value}@gmail.com`
-  //  console.log(Person);
-  // }
-  // -------------------4------------------------
+// ObjectBtn.onclick=()=>{
+//  Person.ObjectName=ObjectName.value
+//  Person.ObjecFamName=ObjecFamName.value
+//  Person.ObjectAge=ObjectAge.value
+//  Person.ObjectEmail=`${ObjectName.value}@gmail.com`
+//  console.log(Person);
+// }
+// -------------------4------------------------
 //  ObjectBtn.onclick=()=>{
 //     Person.ObjectName=ObjectName.value
 //     Person.ObjecFamName=ObjecFamName.value
@@ -237,16 +351,16 @@ var Person={}
 // }
 // -------------------1------------------------
 // Name1 Email1 Password1 NameUser1 btn1
-function theSameName() {
-  if (Name1.value == "keren") {
-    alert("the same name!!");
-    console.log("the same name!!");
-  }
-  console.log("aa");
-}
-btn1.onclick = () => {
-  theSameName();
-};
+// function theSameName() {
+//   if (Name1.value == "keren") {
+//     alert("the same name!!");
+//     console.log("the same name!!");
+//   }
+//   console.log("aa");
+// }
+// btn1.onclick = () => {
+//   theSameName();
+// };
 // -------------------2------------------------
 // function zogi(){
 //   var ArrayNum=[5,7,9,6,8,1,5,3,2]
@@ -258,18 +372,18 @@ btn1.onclick = () => {
 // }console.log(ArrayNum);
 // }zogi()
 // -------------------3.1,3.2,3.3------------------------
-var books = [
-  { Name: "Aldain", Address: "Asdod", Pages: 20 },
-  { Name: "Narnia", Address: "Lod", Pages: 50 },
-  { Name: "Nomi", Address: "Ramle", Pages: 70 },
-  { Name: "keren", Address: "yehod", Pages: 10 },
-  { Name: "Dvora", Address: "Ashkelon", Pages: 30 },
-];
-console.log(books);
-for (let i = 0; i < books.length; i++) {
-  console.log();
-  document.write(`${books[i].Name} ${books[i].Address} ${books[i].Pages} `);
-}
+// var books = [
+//   { Name: "Aldain", Address: "Asdod", Pages: 20 },
+//   { Name: "Narnia", Address: "Lod", Pages: 50 },
+//   { Name: "Nomi", Address: "Ramle", Pages: 70 },
+//   { Name: "keren", Address: "yehod", Pages: 10 },
+//   { Name: "Dvora", Address: "Ashkelon", Pages: 30 },
+// ];
+// console.log(books);
+// for (let i = 0; i < books.length; i++) {
+//   console.log();
+//   document.write(`${books[i].Name} ${books[i].Address} ${books[i].Pages} `);
+// }
 // -------------------3.4------------------------
 // NameBook AddressBook pageBook
 // var newBook={}
@@ -284,16 +398,15 @@ for (let i = 0; i < books.length; i++) {
 //   bookFromUser()
 // }
 // -------------------3.5------------------------
-btnBook.onclick = () => {
-  for (let i = 0; i < books.length; i++) {
-    for (let j = 0; j < 5; j++) {
-      document.write(
-        `${i} :<br>${books[i].Name} ${books[i].Address} ${books[i].Pages} `
-      );
-    }
-  }
-};
-
+// btnBook.onclick = () => {
+//   for (let i = 0; i < books.length; i++) {
+//     for (let j = 0; j < 5; j++) {
+//       document.write(
+//         `${i} :<br>${books[i].Name} ${books[i].Address} ${books[i].Pages} `
+//       );
+//     }
+//   }
+// };
 
 // ------------event-------------------------------------------------------------------
 
